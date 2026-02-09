@@ -2,7 +2,7 @@
 
 Real-time chicken counting and tracking using **YOLOv11s** + **ByteTrack** with Gradio UI.
 
-![Demo](assets/demo.png)
+![Demo](assets/Gradio_UI_Demo.png)
 
 ## Features
 
