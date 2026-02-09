@@ -1,32 +1,21 @@
 # Chicken Counting & Tracking - Configuration
 
-# Model Settings
 model:
-  base_model: "yolo26n.pt"  # YOLO26 nano for speed
+  path: "models/chicken_yolov11s.pt"
   imgsz: 640
-  device: 0
+  device: "cpu"
 
-# Detection Settings
 detection:
-  conf_threshold: 0.5
-  iou_threshold: 0.45
-  classes: [0]  # Chicken class ID
+  conf_threshold: 0.35
+  iou_threshold: 0.5
+  classes: [0]
 
-# Tracking Settings (ByteTrack)
 tracking:
   track_thresh: 0.5
   track_buffer: 30
   match_thresh: 0.8
 
-# Training (Optional)
-training:
-  epochs: 50
-  batch_size: 128
-  patience: 10
-  optimizer: "AdamW"
-  lr0: 0.02
-
-# Output
 paths:
   models: "models/"
   outputs: "outputs/"
+  assets: "assets/"
